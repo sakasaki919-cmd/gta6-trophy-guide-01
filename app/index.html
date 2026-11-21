@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA 6 Trophy Guide &amp; Tracker — Leonida Checklist</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: official names, descriptions and grades, a platinum roadmap, missable flags, and a checklist saved in your browser.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+  <h1>Leonida Trophy Guide <span class="amp">&amp;</span> Tracker</h1>
+  <p class="lede">Every official trophy with its name, description and grade, a guide in our own words, a roadmap to the platinum, and a checklist that saves in your browser. Works fully offline — no network, no account, no ads.</p>
+  <div class="progress-wrap" role="group" aria-label="Overall progress">
+    <div class="progress-numbers"><span id="stat-total">0 / 55</span><span id="stat-pct">0%</span></div>
+    <div class="progress-bar"><div id="progress-fill" class="progress-fill" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div></div>
+    <div class="progress-sub"><span id="stat-grades"></span><span id="stat-missable">Missable 0/10</span></div>
+  </div>
+</header>
+
+<nav class="views" aria-label="Views">
+  <button id="view-tracker" class="view-btn active" type="button">Tracker</button>
+  <button id="view-roadmap" class="view-btn" type="button">Platinum roadmap</button>
+</nav>
+
+<main>
+  <section id="tracker-panel" aria-label="Trophy tracker">
+    <div class="controls">
+      <label class="search-label">Search <input id="search" type="search" placeholder="Name, description or guide…" autocomplete="off"></label>
+      <div id="grade-filters" class="grade-filters" role="group" aria-label="Filter by grade">
+        <button type="button" data-grade="all" class="active">All</button>
+        <button type="button" data-grade="platinum">Platinum</button>
+        <button type="button" data-grade="gold">Gold</button>
+        <button type="button" data-grade="silver">Silver</button>
+        <button type="button" data-grade="bronze">Bronze</button>
+      </div>
+      <div class="selects">
+        <label>Kind
+          <select id="kind-filter">
+            <option value="all">All kinds</option>
+            <option value="story">Story</option>
+            <option value="character">Stranger arcs</option>
+            <option value="collectible">Collectibles</option>
+            <option value="activity">Activities</option>
+            <option value="exploration">Exploration</option>
+            <option value="combat">Combat</option>
+            <option value="misc">Misc</option>
+            <option value="platinum">Platinum</option>
+          </select>
+        </label>
+        <label>Status
+          <select id="status-filter">
+            <option value="all">All</option>
+            <option value="earned">Earned</option>
+            <option value="missing">Not earned</option>
+          </select>
+        </label>
+        <label class="check-label"><input id="missable-filter" type="checkbox"> Missable only</label>
+        <label class="check-label"><input id="spoiler-toggle" type="checkbox"> Hide story spoilers</label>
+      </div>
+      <div class="actions">
+        <button id="export-btn" type="button">Export progress</button>
+        <label class="import-label">Import progress <input id="import-file" type="file" accept="application/json,.json"></label>
+        <button id="reset-btn" type="button">Reset</button>
+        <button id="clear-filters" type="button">Clear filters</button>
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite">55 of 55 trophies</p>
+    </div>
+    <div id="trophy-list" class="trophy-list"></div>
+  </section>
+
+  <section id="roadmap-panel" aria-label="Platinum roadmap" hidden>
+    <h2>Roadmap to the platinum</h2>
+    <p class="roadmap-intro">Five stages, in the order to play them. The only hard deadline is stage 2: stranger arcs can lock out once the story moves on, so finish them before the final mission. Everything else can be done in free roam after the story.</p>
+    <div id="roadmap"></div>
+  </section>
+</main>
+
+<footer>
+  <h2>Sources &amp; notes</h2>
+  <ul id="sources"></ul>
+  <p>Trophy names, descriptions and grades are shown exactly as PlayStation publishes them. Every guide on this page is written in our own words from those official descriptions; where a count or target comes from the official list (for example 42 shooting-range challenges or 52 areas of Leonida), that is the number PlayStation and the trophy sites publish. This guide is not affiliated with Rockstar Games or PlayStation, and it uses no Rockstar logo, artwork or screenshots. All progress is stored only in your browser (localStorage); nothing leaves your machine.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
